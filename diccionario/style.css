@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ae9cff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 500px;
+    padding: 3em;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 2em;
+}
+
+.search-box input {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #d1d1d1;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-box input:focus {
+    border-color: #ae9cff;
+}
+
+.search-box button {
+    width: 30%;
+    background-color: #ae9cff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.search-box button:hover {
+    background-color: #927bf7;
+}
+
+/* Estilos del resultado */
+.result h3 {
+    font-size: 30px;
+    color: #1f194c;
+}
+
+.result .word-details {
+    display: flex;
+    justify-content: space-between;
+    color: #ae9cff;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.result .definition {
+    color: #575a7b;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.result .example {
+    color: #898ba5;
+    font-style: italic;
+    border-left: 3px solid #ae9cff;
+    padding-left: 10px;
+}
+
+.error, .welcome-message {
+    text-align: center;
+    color: #575a7b;
+    margin-top: 20px;
+}
+
+.welcome-message i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #ae9cff;
+}
